@@ -1,0 +1,338 @@
+1: #include<stdio.h>
+2: int power(int x ,int n){
+3:     int a;
+4:     a=1;
+    ENT  1
+    LLA  -1
+    PSH 
+    IMM  1
+    SI  
+5:     while (n>0)
+    LLA  2
+    LI
+    PSH
+    IMM  0
+    GT
+6:     {
+    BZ   0
+7:         a=a*x;
+    LLA  -1
+    PSH
+    LLA  -1
+    LI
+    PSH
+    LLA  3
+    LI
+    MUL 
+    SI
+8:         n=n-1;
+    LLA  2
+    PSH
+    LLA  2
+    LI
+    PSH
+    IMM  1
+    SUB
+    SI
+9:     }
+10:     return a;
+    JMP  -1928921000
+    LLA  -1
+    LI
+    LEV
+11: }
+    LEV
+12:
+13: int main(){
+14:     printf("%d",power(2,10));
+    ENT  0
+    IMM  -1929248752
+    PSH
+    IMM  2
+    PSH
+    IMM  10
+    PSH
+    JSR  -1928921064
+    ADJ  2
+    PSH
+    PRTF
+    ADJ  2
+15:     return 0;
+    IMM  0
+    LEV
+
+
+## 執行結果
+=============================================================
+1> ENT  0
+2> IMM  1639854425
+3> PSH
+4> IMM  2
+5> PSH
+6> IMM  10
+7> PSH
+8> JSR  1636827152
+9> ENT  1
+10> LLA  -1
+11> PSH
+12> IMM  1
+13> SI
+14> LLA  2
+15> LI
+16> PSH
+17> IMM  0
+18> GT
+19> BZ   1636827488
+20> LLA  -1
+21> PSH
+22> LLA  -1
+23> LI
+24> PSH
+25> LLA  3
+26> LI
+27> MUL
+28> SI
+29> LLA  2
+30> PSH
+31> LLA  2
+32> LI
+33> PSH
+34> IMM  1
+35> SUB
+36> SI
+37> JMP  1636827216
+38> LLA  2
+39> LI
+40> PSH
+41> IMM  0
+42> GT
+43> BZ   1636827488
+44> LLA  -1
+45> PSH
+46> LLA  -1
+47> LI
+48> PSH
+49> LLA  3
+50> LI
+51> MUL
+52> SI
+53> LLA  2
+54> PSH
+55> LLA  2
+56> LI
+57> PSH
+58> IMM  1
+59> SUB
+60> SI
+61> JMP  1636827216
+62> LLA  2
+63> LI
+64> PSH
+65> IMM  0
+66> GT
+67> BZ   1636827488
+68> LLA  -1
+69> PSH
+70> LLA  -1
+71> LI
+72> PSH
+73> LLA  3
+74> LI
+75> MUL
+76> SI
+77> LLA  2
+78> PSH
+79> LLA  2
+80> LI
+81> PSH
+82> IMM  1
+83> SUB
+84> SI
+85> JMP  1636827216
+86> LLA  2
+87> LI
+88> PSH
+89> IMM  0
+90> GT
+91> BZ   1636827488
+92> LLA  -1
+93> PSH
+94> LLA  -1
+95> LI
+96> PSH
+97> LLA  3
+98> LI
+99> MUL
+100> SI
+101> LLA  2
+102> PSH
+103> LLA  2
+104> LI
+105> PSH
+106> IMM  1
+107> SUB
+108> SI
+109> JMP  1636827216
+110> LLA  2
+111> LI
+112> PSH
+113> IMM  0
+114> GT
+115> BZ   1636827488
+116> LLA  -1
+117> PSH
+118> LLA  -1
+119> LI
+120> PSH
+121> LLA  3
+122> LI
+123> MUL
+124> SI
+125> LLA  2
+126> PSH
+127> LLA  2
+128> LI
+129> PSH
+130> IMM  1
+131> SUB
+132> SI
+133> JMP  1636827216
+134> LLA  2
+135> LI
+136> PSH
+137> IMM  0
+138> GT
+139> BZ   1636827488
+140> LLA  -1
+141> PSH
+142> LLA  -1
+143> LI
+144> PSH
+145> LLA  3
+146> LI
+147> MUL
+148> SI
+149> LLA  2
+150> PSH
+151> LLA  2
+152> LI
+153> PSH
+154> IMM  1
+155> SUB
+156> SI
+157> JMP  1636827216
+158> LLA  2
+159> LI
+160> PSH
+161> IMM  0
+162> GT
+163> BZ   1636827488
+164> LLA  -1
+165> PSH
+166> LLA  -1
+167> LI
+168> PSH
+169> LLA  3
+170> LI
+171> MUL
+172> SI
+173> LLA  2
+174> PSH
+175> LLA  2
+176> LI
+177> PSH
+178> IMM  1
+179> SUB
+180> SI
+181> JMP  1636827216
+182> LLA  2
+183> LI
+184> PSH
+185> IMM  0
+186> GT
+187> BZ   1636827488
+188> LLA  -1
+189> PSH
+190> LLA  -1
+191> LI
+192> PSH
+193> LLA  3
+194> LI
+195> MUL
+196> SI
+197> LLA  2
+198> PSH
+199> LLA  2
+200> LI
+201> PSH
+202> IMM  1
+203> SUB
+204> SI
+205> JMP  1636827216
+206> LLA  2
+207> LI
+208> PSH
+209> IMM  0
+210> GT
+211> BZ   1636827488
+212> LLA  -1
+213> PSH
+214> LLA  -1
+215> LI
+216> PSH
+217> LLA  3
+218> LI
+219> MUL
+220> SI
+221> LLA  2
+222> PSH
+223> LLA  2
+224> LI
+225> PSH
+226> IMM  1
+227> SUB
+228> SI
+229> JMP  1636827216
+230> LLA  2
+231> LI
+232> PSH
+233> IMM  0
+234> GT
+235> BZ   1636827488
+236> LLA  -1
+237> PSH
+238> LLA  -1
+239> LI
+240> PSH
+241> LLA  3
+242> LI
+243> MUL
+244> SI
+245> LLA  2
+246> PSH
+247> LLA  2
+248> LI
+249> PSH
+250> IMM  1
+251> SUB
+252> SI
+253> JMP  1636827216
+254> LLA  2
+255> LI
+256> PSH
+257> IMM  0
+258> GT
+259> BZ   1636827488
+260> LLA  -1
+261> LI
+262> LEV
+263> ADJ  2
+264> PSH
+265> PRTF
+power(2,10)=1024
+266> ADJ  2
+267> IMM  0
+268> LEV
+269> PSH
+270> EXIT
+exit(0) cycle = 270
